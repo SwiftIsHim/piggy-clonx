@@ -1,3 +1,6 @@
+body {
+  font-family: Plus Jakarta Sans;
+}
 .nav-item {
   color: #3d4f60;
   font-family: "Plus Jakarta Sans";
@@ -8,7 +11,53 @@
   padding: 12px 0px;
 }
 
+@media (min-width: 992px) {
+  .navpad {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+  .second-sec {
+    padding: 0px 300px;
+  }
+  .sec-sect {
+    padding-right: 300px;
+  }
+}
+
 .nav4 {
   font-size: 13px;
   color: #3d4f60;
+}
+.first-btn {
+  background-color: #0089ff;
+  border: 0px;
+  color: white;
+  height: 45px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 330px;
+  font-weight: bold;
+}
+.first-btn:hover {
+  background-color: black;
+}
+.btnf {
+  font-weight: 600;
+}
+.btnf:hover {
+  background-color: black;
+}
+.second-sec {
+  padding-top: 50px;
+}
+.sec-sect {
+  padding-top: 20px;
+}
+.save-card {
+  margin-top: 30px;
+  border: 0px;
+  background-color: white;
+  border-radius: 20px;
+  height: 350px;
+  padding: 40px;
 }
