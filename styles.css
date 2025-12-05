@@ -71,14 +71,7 @@ body {
 .sec-sect {
   padding-top: 20px;
 }
-.save-card {
-  margin-top: 30px;
-  border: 0px;
-  background-color: white;
-  border-radius: 20px;
-  height: 350px;
-  padding: 40px;
-}
+
 .savings-sec {
   margin-top: 100px;
 }
@@ -127,18 +120,20 @@ body {
     gap: 50px;
     width: 90%;
   }
+  .invest-pic img {
+    width: 300px;
+  }
 }
 .saver-month {
   background-color: #f2f7f8;
+  padding-bottom: 100px;
 }
 
 .yt-vid {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   margin: 40px auto;
   padding: 0 16px;
   max-width: 1000px;
+  padding-bottom: 200px;
 }
 .yt-vid iframe {
   width: 100%;
@@ -156,4 +151,238 @@ body {
     max-width: 100%;
     border-radius: 10px;
   }
+}
+
+.testimonial-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 32px;
+}
+.testi-img img {
+  display: block;
+  width: 100%;
+  max-width: 460px;
+  border-radius: 12px;
+}
+.testi-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.testi-text img {
+  max-width: 240px;
+}
+.getbtns {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+.getbtns button {
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: 0.1px solid lightgrey;
+  background: #f2f7f8;
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .testimonial-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+  }
+  .testi-text {
+    align-items: center;
+  }
+  .testi-img img {
+    max-width: 400px;
+  }
+}
+.logosection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logosection span {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 40px 0px;
+}
+.logo-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.logo-list img {
+  object-fit: contain;
+  height: 60px;
+  width: auto;
+  max-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .logo-list img {
+    height: 50px;
+    max-width: 150px;
+  }
+}
+@media (max-width: 640px) {
+  .logo-list img {
+    height: 45px;
+    max-width: 120px;
+  }
+}
+
+.footer {
+  background: #fff;
+  padding: 150px 12%;
+  color: #444;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-bottom: 30px;
+  min-width: 180px;
+}
+
+.footer-section h3 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-section a {
+  display: block;
+  margin: 6px 0;
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+}
+
+.footer-section a:hover {
+  color: #0d6efd;
+}
+
+.logo-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo1 {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.badge1 {
+  width: 110px;
+}
+
+.contact-section p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 5px 0;
+}
+
+i {
+  margin-right: 10px;
+  /* font-style: normal;
+  background: #f1f1f1;
+  padding: 5px 8px;
+  border-radius: 4px; */
+}
+
+hr {
+  margin: 40px 0;
+  border: none;
+  height: 1px;
+  background: #979797;
+}
+
+.footer-bottom {
+  font-size: 12px;
+  color: #666;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+.foot-last {
+  color: blue;
+  padding-top: 30px;
+}
+
+.save-card {
+  height: 350px;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.4s ease;
+  margin-top: 30px;
+}
+
+/* Text content */
+
+.save-card p {
+  color: #4a5c7a;
+  width: 80%;
+  line-height: 1.4;
+}
+
+.save-card .save-phone {
+  position: absolute;
+  width: 180px;
+  bottom: -80px;
+  right: -180px;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.save-card:hover h2,
+.save-card:hover p,
+.save-card:hover .icon {
+  color: white;
+}
+
+.save-card:hover .save-phone {
+  right: 15px;
+  bottom: 1px;
+  opacity: 1;
+}
+
+.save-card h2 {
+  color: #003f9c;
+  margin: 0 0 10px;
+}
+
+.save-card:hover {
+  background: #0d4fd4;
+  color: white;
+}
+
+.save-card .icon {
+  display: inline-block;
+  margin-top: 150px;
+  color: #003f9c;
+  font-size: 14px;
 }
