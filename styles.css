@@ -10,6 +10,15 @@ body {
 .navpad {
   padding: 12px 0px;
 }
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* transition: background 0.3s ease, color 0.3s ease; */
+  z-index: 1000;
+  /* box-shadow: #444; */
+}
 
 @media (min-width: 992px) {
   .navpad {
@@ -65,7 +74,7 @@ body {
   margin-top: 10px;
 }
 .second-sec {
-  padding-top: 50px;
+  padding-top: 150px;
   padding-bottom: 100px;
 }
 .sec-sect {
